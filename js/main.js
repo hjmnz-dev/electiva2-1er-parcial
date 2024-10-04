@@ -2,7 +2,7 @@ $(window).on('load',function(){
 
 
 
-if(window.location.href.indexOf('index')>-1){
+if(window.location.pathname === '/' || window.location.href.indexOf('index')>-1){
 
     $('.bxslider').bxSlider({
 
@@ -19,7 +19,7 @@ if(window.location.href.indexOf('index')>-1){
 
 //Posts
 
-if(window.location.href.indexOf('index')>-1){
+if(window.location.pathname === '/' || window.location.href.indexOf('index')>-1){
 
 var posts=[
     {
